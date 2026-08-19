@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayNow | 설렘을 지금 바로 시작하세요</title>
+    <style>
+        /* CSS: 다크 모드 & 반응형 스타일 */
+        :root {
+            --bg-color: #0d0d0d;
+            --text-primary: #ffffff;
+            --text-secondary: #b3b3b3;
+            --accent-color: #e50914; /* PlayNow 브랜드 컬러 */
+            --card-bg: #1a1a1a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; background-color: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+        /* 헤더 */
+        header { padding: 20px 0; font-weight: bold; font-size: 1.2rem; }
+        header span { color: var(--accent-color); }
+
+        /* 히어로 섹션 */
+        .hero { padding: 60px 0; text-align: center; }
+        h1 { font-size: 2.5rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 30px; }
+        .cta-btn { background: var(--accent-color); color: white; padding: 18px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; }
+        .cta-btn:hover { background: #ff0a16; transform: scale(1.05); }
+
+        /* 섹션 공통 */
+        section { padding: 40px 0; border-top: 1px solid #333; }
+        h2 { font-size: 1.8rem; margin-bottom: 20px; }
+        
+        /* 카드 그리드 */
+        .grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 20px; }
+        .card { background: var(--card-bg); padding: 25px; border-radius: 15px; }
+        .card h3 { color: var(--accent-color); margin-bottom: 10px; }
+
+        /* 푸터 */
+        footer { text-align: center; padding: 40px 0; color: #555; font-size: 0.9rem; }
+
+        @media (min-width: 600px) {
+            .grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header><span>PlayNow</span></header>
+
+        <!-- 히어로 섹션 -->
+        <section class="hero">
+            <h1>가원님, 오늘 볼 로맨스<br>아직 고민 중이세요?</h1>
+            <p>수많은 작품 속에서 헤매지 마세요.<br>가원님의 취향을 저격할 지금 가장 핫한 인기작만 모았습니다.</p>
+            <a href="#" class="cta-btn" onclick="alert('앱으로 이동합니다.')">지금 첫 작품 보기</a>
+        </section>
+
+        <!-- 문제 공감 -->
+        <section>
+            <h2>무엇을 볼지 고민되시죠?</h2>
+            <p style="color: var(--text-secondary);">분명 로맨스/드라마를 보고 싶은데, 막상 고르려니 시간만 가고 결국 앱을 닫았던 경험, 누구나 한 번쯤 있으니까요.</p>
+        </section>
+
+        <!-- 가치 제안 -->
+        <section>
+            <h2>고민은 PlayNow가 할게요</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>맞춤 큐레이션</h3>
+                    <p>가원님이 최근 관심을 보인 장르를 실시간으로 분석해 추천합니다.</p>
+                </div>
+                <div class="card">
+                    <h3>실시간 인기작</h3>
+                    <p>지금 이 순간, 가장 반응이 뜨거운 화제작만 엄선했습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 최종 CTA -->
+        <section style="text-align: center; border: none;">
+            <p style="margin-bottom: 20px;">설렘 가득한 첫 시청, 지금 바로 시작하세요.</p>
+            <a href="#" class="cta-btn" onclick="alert('앱으로 이동합니다.')">지금 첫 작품 보기</a>
+        </section>
+
+        <footer>
+            &copy; 2026 PlayNow. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        // 간단한 상호작용
+        console.log("PlayNow 캠페인 페이지 로드 완료");
+    </script>
+</body>
+</html>
